@@ -1,0 +1,59 @@
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta content="pt-BR" http-equiv="Content-Language" />
+<meta name="language" content="pt-BR" />
+<meta name="distribution" content="global"/>
+
+<link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css"/>
+
+<script type="text/javascript"></script>
+</head>
+<body>
+  <section>
+    <div>
+      <header>
+        <h1>
+
+		{% load static %}
+
+		{{ poll.question }}
+
+		</h1>
+
+		{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+		<form action="/polls/{{ poll.id }}/vote/" method="post">
+
+		{% csrf_token %}
+
+		{% for choice in poll.choice_set.all %}
+
+		    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+
+		    <label for="choice{{ forloop.counter }}">{{ choice.candidate }}</label><br />
+		    
+		    <img src={{ choice.candidate_photo.url}} />
+		    
+		    <br />
+		    
+		{% endfor %}
+		<input type="submit" value="Vote" />
+		</form>
+
+
+		<ul>
+		{% for choice in poll.choice_set.all %}
+
+			<li>{{ choice.candidate }} -- {{ choice.votes }} vote{{choice.votes|pluralize }} ({{choice.percentual}} %)</li>
+
+		{% endfor %}
+		</ul>
+    </div>
+
+    <p><a href="{% url polls.views.index %}">Paredões acontecendo</a>
+  </section>
+  </body>
+</html>		
+

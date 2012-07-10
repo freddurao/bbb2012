@@ -1,0 +1,10 @@
+<h1>{{ poll.question }}</h1>
+
+<ul>
+
+{% for choice in poll.choice_set.all %}
+
+    <li>{{ choice.candidate }} <img src="{{MEDIA_URL}}{{ choice.candidate_photo }}"/>  -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+
+{% endfor %}
+</ul>

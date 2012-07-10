@@ -1,0 +1,29 @@
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta content="pt-BR" http-equiv="Content-Language" />
+<meta name="language" content="pt-BR" />
+<meta name="distribution" content="global"/>
+
+<link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css"/>
+
+<script type="text/javascript"></script>
+</head>
+<body>
+  <section>
+    <div>
+		<h1>Paredões em Andamento</h1>
+		{% if latest_poll_list %}
+		    <ul>
+		    {% for poll in latest_poll_list %}
+		    <li><a href="{% url polls.views.detail poll_id=poll.id %}">{{ poll.question }}</a></li>
+		    {% endfor %}
+		    </ul>
+		{% else %}
+		    <p>No polls are available.</p>
+		{% endif %}
+    </div>
+  </section>
+  </body>
+</html>
