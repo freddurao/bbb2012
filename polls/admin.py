@@ -1,10 +1,11 @@
+#-*- coding: utf-8 -*-
 from bbb2012.polls.models import Poll
 from bbb2012.polls.models import Choice
 from django.contrib import admin
 
 class ChoiceInline(admin.TabularInline):
     model = Choice
-    extra = 3
+    extra = 2
     
 class PollAdmin(admin.ModelAdmin):
     

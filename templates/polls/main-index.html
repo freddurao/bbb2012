@@ -6,27 +6,36 @@
 <meta name="language" content="pt-BR" />
 <meta name="distribution" content="global"/>
 
-<link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css"/>
+<link rel="stylesheet" href="{{MEDIA_URL}}css/style.css" type="text/css"/>
 
 <script type="text/javascript"></script>
 </head>
+
 <body>
-  <section class="sitetop">
-    <div class="brand">
-      <header>
-        <h1>
-          BBB 2012 Paredão 
-        </h1>
-				<img src="{{MEDIA_URL}}img/bbb.jpg"/>
+	<div>
 
-				<h1>Votação do BBB2012</h1>
+		<div>
+		<h2>Paredões em Andamento</h2>
+		{% if latest_poll_list %}
+				<ul>
+				{% for poll in latest_poll_list %}
+				<a href="{% url polls.views.detail poll_id=poll.id %}">{{ poll.question }}</a>
+				{% endfor %}
+				</ul>
+		{% else %}
+				<p>No polls are available.</p>
+		{% endif %}
+		</div>
 
-				<p><a href="{% url polls.views.index %}">Paredões acontecendo</a>
 
-				<p><a href="/admin">Crie um novo paredão (admin role)</a>
-      
-      <div class="clear"></div>
-    </div>
-  </section>
-  </body>
+		<div>
+		<h2>Cadastre um novo paredão</h2>
+				<a href="/admin">Crie um novo paredão (admin role)</a>
+		</div>
+
+	</div>
+		
+		<br><img src="{{MEDIA_URL}}img/bbb.jpg"/>
+
+</body>
 </html>

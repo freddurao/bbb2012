@@ -6,54 +6,69 @@
 <meta name="language" content="pt-BR" />
 <meta name="distribution" content="global"/>
 
-<link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css"/>
+<link rel="stylesheet" href="{{MEDIA_URL}}css/style.css" type="text/css"/>
 
 <script type="text/javascript"></script>
+
 </head>
+
 <body>
-  <section>
-    <div>
-      <header>
-        <h1>
+  
+		<h2>
 
 		{% load static %}
 
 		{{ poll.question }}
 
-		</h1>
+		</h2>
 
 		{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+	
+		
+     	<ul>
+		{% for choice in poll.choice_set.all %}
 
+		{{ choice.candidate }} -- {{ choice.votes }} vote{{choice.votes|pluralize }} ({{choice.percentual}} %)
+		<br>
+
+		{% endfor %}
+		</ul>	
+		
+
+		<div id="form_style">
+		
 		<form action="/polls/{{ poll.id }}/vote/" method="post">
 
 		{% csrf_token %}
 
-		{% for choice in poll.choice_set.all %}
+				<table>
+				<tr>
+					<th colspan="3">Candidatos</th>
+				</tr>
+				<tr class="yellow"> 
+					{% for choice in poll.choice_set.all %}
+					<td>
 
-		    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+						<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/>
 
-		    <label for="choice{{ forloop.counter }}">{{ choice.candidate }}</label><br />
-		    
-		    <img src={{ choice.candidate_photo.url}} />
-		    
-		    <br />
-		    
-		{% endfor %}
-		<input type="submit" value="Vote" />
-		</form>
+						<label for="choice{{ forloop.counter }}">{{ choice.candidate }}</label><br />
+					    
+						<img src={{ choice.candidate_photo.url}} />
+					    
+						<br />
+					</td>
 
-
-		<ul>
-		{% for choice in poll.choice_set.all %}
-
-			<li>{{ choice.candidate }} -- {{ choice.votes }} vote{{choice.votes|pluralize }} ({{choice.percentual}} %)</li>
-
-		{% endfor %}
-		</ul>
-    </div>
-
-    <p><a href="{% url polls.views.index %}">Paredões acontecendo</a>
-  </section>
-  </body>
-</html>		
+					{% endfor %}
+				</tr>
+				<br>
+				</table>
+				<input type="submit" value="Vote" align="right">
+			</form>
+			</div>
+			<ul>
+			<a href="{% url polls.views.index %}">Paredões acontecendo</a><br>
+			<a href="/admin">Crie um novo paredão (admin role)</a>
+			</ul>			
+</body>
+</html>
 

@@ -12,14 +12,17 @@ class PollTest(TestCase):
         question="Quem será eliminado do BBB 2012"
         now = datetime.now()
         self.poll = Poll.objects.create(question=question, pub_date=now)
-        self.poll.choice_set.create(candidate="Fred",votes=0,percentual=0.0)
-        self.poll.choice_set.create(candidate="Marcel",votes=0,percentual=0.0)
+        self.poll.choice_set.create(candidate="Fred",votes=0,percentual=0.0,candidate_photo="fred.png")
+        self.poll.choice_set.create(candidate="Marcel",votes=0,percentual=0.0,candidate_photo="marcel.png")
 
     def test_dos_modelos(self):
         
         self.assertEqual(self.poll.choice_set.all().count(), 2)
         self.assertNotEqual(self.poll.choice_set.all().count(), 0)
-    
+
+    def test_same_candidate(self):
+        self.assertNotEqual(self.poll.choice_set.all()[0].candidate, self.poll.choice_set.all()[1].candidate)
+
     def test_de_voto(self):
         c = Client()
         # Fazendo o primeiro voto

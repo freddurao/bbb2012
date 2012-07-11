@@ -7,7 +7,8 @@ from bbb2012.polls.models import Choice, Poll
 from django.template import RequestContext
 
 def main_index(request):
-    return render_to_response("polls/main-index.html", {}, RequestContext(request))
+    latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
+    return render_to_response("polls/main-index.html",{'latest_poll_list': latest_poll_list}, RequestContext(request))
 
 
 def index(request):

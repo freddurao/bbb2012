@@ -8,7 +8,7 @@ It creates the questions poll and the publicatioon date of the poll.
 '''
 class Poll(models.Model):
 
-    question = models.CharField(max_length=200)
+    question = models.CharField(max_length=200,unique=True)
 
     pub_date = models.DateTimeField('Publication Date')
 
@@ -27,7 +27,7 @@ class Choice(models.Model):
     
     poll = models.ForeignKey(Poll)
     
-    candidate = models.CharField(max_length=200)
+    candidate = models.CharField(max_length=200,unique=True)
 
     candidate_photo = models.ImageField(upload_to="static/img/")    
     
