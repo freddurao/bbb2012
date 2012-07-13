@@ -62,6 +62,23 @@
 				</tr>
 				<br>
 				</table>
+
+
+
+
+			{% if error %}
+				<div style="text-align:center;"><b>FAILURE</b></div>
+			{% endif %}
+			{% if ok %}
+				<div style="text-align:center;"><b>SUCCESS ! :)</b></div>
+			{% endif %}
+			
+			<input type="hidden" value="{{ hash }}" name="imghash">
+			<b>Text from the image</b><br />(Use CAPITAL letters)<br />
+			<input type="text" size="20" name="imgtext"><br />
+			<img src="{{MEDIA_URL}}img/{{ tempname }}"><br />
+			
+
 				<input type="submit" value="Vote" align="right">
 			</form>
 			</div>
