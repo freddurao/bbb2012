@@ -62,6 +62,7 @@ def results(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
     return render_to_response('polls/results.html', {'poll': p},RequestContext(request))
 
+@cache_page(60 * 15)
 def results_same_screen(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
     param  = {'poll': p}
