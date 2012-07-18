@@ -84,6 +84,19 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
+# Cache system
+CACHE_DEFAULT_TIME = 5400 # 1 minuto
+CACHE_PROFILE_USERS_TIME = 5400 # 3 horas
+IMAGE_EXISTS_CACHE_TIME = 5400 # 3 horas
+VIDEOS_CACHE_TIME = 3600
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
+
 ROOT_URLCONF = 'bbb2012.urls'
 
 TEMPLATE_DIRS = (

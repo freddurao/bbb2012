@@ -7,24 +7,24 @@ from bbb2012.polls.models import Choice, Poll
 from django.template import RequestContext
 from django.conf import settings
 from os import remove
+from django.views.decorators.cache import cache_page
 
 def main_index(request):
     latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
     return render_to_response("polls/main-index.html",{'latest_poll_list': latest_poll_list}, RequestContext(request))
 
-
 def index(request):
     latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
-
     return render_to_response('polls/index.html', {'latest_poll_list': latest_poll_list},RequestContext(request))
 
-
+@cache_page(60 * 15)
 def detail(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
     param  = {'poll': p}
     param.update(captcha(request))
     return render_to_response('polls/detail.html',param,RequestContext(request))
 
+@cache_page(60 * 15)
 def vote(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
     dist_captcha = captcha(request)
