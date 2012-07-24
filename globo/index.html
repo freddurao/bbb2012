@@ -1,0 +1,43 @@
+<html>
+<head>
+    <style type="text/css" media="screen">
+        @import url('css/base.css');
+    </style>
+</head>
+<body>
+<div class="poll_container centered"><!-- div geral que envolve o conteúdo -->
+<form>
+    <div class="poll_content">
+        
+        <h2><i></i> Quem deve ser <strong>eliminado</strong>?</h2><!-- título geral. o <i></i> vazio faz carregar o ícone antes do texto-->
+        <div class="one2 first">
+            <h3>Participante 1</h3>
+            <label for="candidate01" class="selected_candidate"><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
+                <img src="css/img/candidate01.jpg" />
+                <input type="radio" name="poll" id="candidate01" />
+            </label>
+            <p>Para eliminar o <strong>Participante 1</strong> pelo telefone disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8001</strong></p>
+        </div>
+
+        <div class="one2">
+            <h3>Participante 2</h3>
+            <label for="candidate02">
+                <img src="css/img/candidate02.jpg" />
+                <input type="radio" name="poll" id="candidate02" />
+            </label>
+            <p>Para eliminar o <strong>Participante 2</strong> pelo telefone disque <strong>0800-123-002</strong> ou mande um SMS para <strong>8002</strong></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="poll_submit"><!-- div para submeter voto. Tanto faz usar link, input ou button - todos irão se ajustar ao desing -->
+        <a href="index02.html">Envie seu voto agora</a>
+        <!--button>Envie seu voto agora</button-->
+        <!--input type="submit" value="Envie seu voto agora" /-->
+    </div>
+
+</form>
+<div class="close_poll"><a href="#">Fechar</a></div>
+</div><!-- poll_container -->
+</body>
+</html>

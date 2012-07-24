@@ -1,0 +1,287 @@
+1,57.221,1342702455,user_group-1,57.217395,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+2,73.609,1342702471,user_group-1,16.387180,,{}
+3,73.620,1342702471,user_group-1,0.010888,,{}
+4,73.633,1342702471,user_group-1,0.013293,,{}
+5,73.645,1342702471,user_group-1,0.011819,,{}
+6,73.656,1342702471,user_group-1,0.010913,,{}
+7,73.664,1342702471,user_group-1,0.007954,,{}
+8,76.301,1342702474,user_group-1,2.636866,,{}
+9,76.315,1342702474,user_group-1,0.013838,,{}
+10,76.329,1342702474,user_group-1,0.014431,,{}
+11,76.339,1342702474,user_group-1,0.009185,,{}
+12,76.346,1342702474,user_group-1,0.006973,,{}
+13,76.354,1342702474,user_group-1,0.008658,,{}
+14,76.363,1342702474,user_group-1,0.008786,,{}
+15,76.375,1342702474,user_group-1,0.011600,,{}
+16,76.385,1342702474,user_group-1,0.010079,,{}
+17,76.396,1342702474,user_group-1,0.010781,,{}
+18,76.403,1342702474,user_group-1,0.007243,,{}
+19,76.410,1342702474,user_group-1,0.007397,,{}
+20,76.420,1342702474,user_group-1,0.009699,,{}
+21,76.430,1342702474,user_group-1,0.009525,,{}
+22,76.440,1342702474,user_group-1,0.009799,,{}
+23,76.448,1342702474,user_group-1,0.008451,,{}
+24,76.457,1342702474,user_group-1,0.008971,,{}
+25,76.465,1342702474,user_group-1,0.007806,,{}
+26,78.588,1342702476,user_group-1,2.123037,,{}
+27,78.603,1342702476,user_group-1,0.015386,,{}
+28,85.804,1342702483,user_group-1,7.200107,,{}
+29,85.813,1342702483,user_group-1,0.009157,,{}
+30,88.826,1342702486,user_group-1,3.013094,,{}
+31,109.869,1342702507,user_group-1,21.043503,,{}
+32,109.881,1342702507,user_group-1,0.011055,,{}
+33,109.892,1342702507,user_group-1,0.011246,,{}
+34,109.906,1342702507,user_group-1,0.013881,,{}
+35,109.918,1342702507,user_group-1,0.011940,,{}
+36,109.928,1342702507,user_group-1,0.010660,,{}
+37,109.939,1342702507,user_group-1,0.010577,,{}
+38,109.958,1342702507,user_group-1,0.018830,,{}
+39,109.970,1342702507,user_group-1,0.011911,,{}
+40,109.980,1342702507,user_group-1,0.009986,,{}
+41,109.991,1342702507,user_group-1,0.011454,,{}
+42,110.007,1342702507,user_group-1,0.015350,,{}
+43,110.020,1342702507,user_group-1,0.013466,,{}
+44,110.032,1342702507,user_group-1,0.011136,,{}
+45,110.045,1342702507,user_group-1,0.013464,,{}
+46,110.055,1342702507,user_group-1,0.009704,,{}
+47,110.064,1342702507,user_group-1,0.008861,,{}
+48,110.074,1342702507,user_group-1,0.009819,,{}
+49,110.088,1342702507,user_group-1,0.014383,,{}
+50,110.099,1342702507,user_group-1,0.011377,,{}
+51,110.110,1342702507,user_group-1,0.010253,,{}
+52,110.123,1342702507,user_group-1,0.012934,,{}
+53,110.133,1342702507,user_group-1,0.010021,,{}
+54,110.145,1342702507,user_group-1,0.012469,,{}
+55,155.499,1342702553,user_group-1,45.353315,,{}
+56,155.511,1342702553,user_group-1,0.012724,,{}
+57,155.521,1342702553,user_group-1,0.009042,,{}
+58,155.530,1342702553,user_group-1,0.009347,,{}
+59,155.540,1342702553,user_group-1,0.010230,,{}
+60,155.551,1342702553,user_group-1,0.010867,,{}
+61,155.561,1342702553,user_group-1,0.009258,,{}
+62,155.569,1342702553,user_group-1,0.008733,,{}
+63,155.578,1342702553,user_group-1,0.008801,,{}
+64,155.590,1342702553,user_group-1,0.012018,,{}
+65,155.603,1342702553,user_group-1,0.012885,,{}
+66,155.612,1342702553,user_group-1,0.009098,,{}
+67,155.622,1342702553,user_group-1,0.009279,,{}
+68,155.630,1342702553,user_group-1,0.008115,,{}
+69,155.642,1342702553,user_group-1,0.011804,,{}
+70,155.652,1342702553,user_group-1,0.009885,,{}
+71,155.667,1342702553,user_group-1,0.015003,,{}
+72,155.677,1342702553,user_group-1,0.010074,,{}
+73,155.689,1342702553,user_group-1,0.011728,,{}
+74,155.707,1342702553,user_group-1,0.018110,,{}
+75,155.727,1342702553,user_group-1,0.019899,,{}
+76,155.741,1342702553,user_group-1,0.014617,,{}
+77,155.750,1342702553,user_group-1,0.008757,,{}
+78,155.760,1342702553,user_group-1,0.010150,,{}
+79,155.774,1342702553,user_group-1,0.013474,,{}
+80,155.786,1342702553,user_group-1,0.011726,,{}
+81,155.796,1342702553,user_group-1,0.010402,,{}
+82,155.808,1342702553,user_group-1,0.012046,,{}
+83,155.818,1342702553,user_group-1,0.009292,,{}
+84,155.826,1342702553,user_group-1,0.008709,,{}
+85,155.837,1342702553,user_group-1,0.010790,,{}
+86,155.849,1342702553,user_group-1,0.011862,,{}
+87,155.861,1342702553,user_group-1,0.011566,,{}
+88,155.870,1342702553,user_group-1,0.009207,,{}
+89,155.879,1342702553,user_group-1,0.009003,,{}
+90,155.890,1342702553,user_group-1,0.010744,,{}
+91,155.900,1342702553,user_group-1,0.009753,,{}
+92,155.912,1342702553,user_group-1,0.012006,,{}
+93,155.920,1342702553,user_group-1,0.008634,,{}
+94,155.933,1342702553,user_group-1,0.012887,,{}
+95,156.153,1342702553,user_group-1,0.219973,,{}
+96,156.165,1342702554,user_group-1,0.011176,,{}
+97,156.174,1342702554,user_group-1,0.009109,,{}
+98,156.185,1342702554,user_group-1,0.011442,,{}
+99,156.197,1342702554,user_group-1,0.011681,,{}
+100,156.206,1342702554,user_group-1,0.008896,,{}
+101,156.220,1342702554,user_group-1,0.014092,,{}
+102,156.231,1342702554,user_group-1,0.010563,,{}
+103,156.243,1342702554,user_group-1,0.012371,,{}
+104,156.252,1342702554,user_group-1,0.008770,,{}
+105,156.263,1342702554,user_group-1,0.010827,,{}
+106,156.274,1342702554,user_group-1,0.011364,,{}
+107,156.282,1342702554,user_group-1,0.007821,,{}
+108,156.291,1342702554,user_group-1,0.008934,,{}
+109,156.299,1342702554,user_group-1,0.007726,,{}
+110,156.308,1342702554,user_group-1,0.008899,,{}
+111,156.321,1342702554,user_group-1,0.013687,,{}
+112,156.336,1342702554,user_group-1,0.014869,,{}
+113,156.345,1342702554,user_group-1,0.009037,,{}
+114,156.356,1342702554,user_group-1,0.010046,,{}
+115,156.368,1342702554,user_group-1,0.012448,,{}
+116,156.380,1342702554,user_group-1,0.012202,,{}
+117,156.390,1342702554,user_group-1,0.009933,,{}
+118,156.400,1342702554,user_group-1,0.009972,,{}
+119,156.408,1342702554,user_group-1,0.008095,,{}
+120,156.419,1342702554,user_group-1,0.010704,,{}
+121,156.430,1342702554,user_group-1,0.010604,,{}
+122,156.441,1342702554,user_group-1,0.010816,,{}
+123,156.452,1342702554,user_group-1,0.011511,,{}
+124,156.461,1342702554,user_group-1,0.008820,,{}
+125,156.472,1342702554,user_group-1,0.011116,,{}
+126,156.482,1342702554,user_group-1,0.010065,,{}
+127,156.494,1342702554,user_group-1,0.011440,,{}
+128,156.504,1342702554,user_group-1,0.010424,,{}
+129,156.515,1342702554,user_group-1,0.010754,,{}
+130,156.528,1342702554,user_group-1,0.013150,,{}
+131,156.538,1342702554,user_group-1,0.009931,,{}
+132,156.549,1342702554,user_group-1,0.010209,,{}
+133,156.559,1342702554,user_group-1,0.010657,,{}
+134,156.569,1342702554,user_group-1,0.009686,,{}
+135,156.581,1342702554,user_group-1,0.012116,,{}
+136,156.804,1342702554,user_group-1,0.223040,,{}
+137,159.825,1342702557,user_group-1,3.020581,,{}
+138,159.834,1342702557,user_group-1,0.008860,,{}
+139,159.841,1342702557,user_group-1,0.007147,,{}
+140,159.851,1342702557,user_group-1,0.009542,,{}
+141,159.860,1342702557,user_group-1,0.009468,,{}
+142,159.865,1342702557,user_group-1,0.005179,,{}
+143,159.869,1342702557,user_group-1,0.003507,,{}
+144,159.876,1342702557,user_group-1,0.006825,,{}
+145,159.885,1342702557,user_group-1,0.008992,,{}
+146,159.892,1342702557,user_group-1,0.007080,,{}
+147,159.904,1342702557,user_group-1,0.012116,,{}
+148,162.918,1342702560,user_group-1,3.014237,,{}
+149,162.932,1342702560,user_group-1,0.013824,,{}
+150,162.941,1342702560,user_group-1,0.009045,,{}
+151,162.950,1342702560,user_group-1,0.009167,,{}
+152,162.961,1342702560,user_group-1,0.010213,,{}
+153,162.969,1342702560,user_group-1,0.008335,,{}
+154,162.979,1342702560,user_group-1,0.009655,,{}
+155,162.992,1342702560,user_group-1,0.013128,,{}
+156,163.004,1342702560,user_group-1,0.011625,,{}
+157,163.014,1342702560,user_group-1,0.009934,,{}
+158,163.023,1342702560,user_group-1,0.009496,,{}
+159,163.032,1342702560,user_group-1,0.009249,,{}
+160,163.041,1342702560,user_group-1,0.008809,,{}
+161,163.056,1342702560,user_group-1,0.014555,,{}
+162,163.069,1342702560,user_group-1,0.012684,,{}
+163,163.084,1342702560,user_group-1,0.015004,,{}
+164,163.093,1342702560,user_group-1,0.009542,,{}
+165,163.105,1342702560,user_group-1,0.011292,,{}
+166,163.118,1342702560,user_group-1,0.013667,,{}
+167,163.128,1342702560,user_group-1,0.009579,,{}
+168,163.139,1342702560,user_group-1,0.011090,,{}
+169,163.152,1342702560,user_group-1,0.012449,,{}
+170,163.162,1342702560,user_group-1,0.010063,,{}
+171,163.172,1342702561,user_group-1,0.010659,,{}
+172,163.185,1342702561,user_group-1,0.012290,,{}
+173,163.196,1342702561,user_group-1,0.011140,,{}
+174,163.206,1342702561,user_group-1,0.010239,,{}
+175,163.215,1342702561,user_group-1,0.008936,,{}
+176,163.225,1342702561,user_group-1,0.009415,,{}
+177,163.238,1342702561,user_group-1,0.012888,,{}
+178,163.247,1342702561,user_group-1,0.009507,,{}
+179,163.257,1342702561,user_group-1,0.009498,,{}
+180,163.269,1342702561,user_group-1,0.012254,,{}
+181,163.278,1342702561,user_group-1,0.008516,,{}
+182,163.285,1342702561,user_group-1,0.006846,,{}
+183,163.291,1342702561,user_group-1,0.006026,,{}
+184,163.302,1342702561,user_group-1,0.011021,,{}
+185,163.313,1342702561,user_group-1,0.011209,,{}
+186,163.326,1342702561,user_group-1,0.012946,,{}
+187,163.340,1342702561,user_group-1,0.013777,,{}
+188,163.354,1342702561,user_group-1,0.014149,,{}
+189,189.445,1342702587,user_group-2,189.440662,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+190,189.445,1342702587,user_group-2,189.430672,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+191,189.445,1342702587,user_group-2,189.423193,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+192,189.446,1342702587,user_group-1,189.429859,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+193,189.447,1342702587,user_group-1,189.429838,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+194,189.448,1342702587,user_group-1,189.427901,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+195,189.448,1342702587,user_group-1,189.416694,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+196,189.449,1342702587,user_group-1,189.418051,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+197,189.449,1342702587,user_group-1,189.420933,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+198,189.449,1342702587,user_group-1,189.423559,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+199,189.452,1342702587,user_group-1,189.429695,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+200,189.453,1342702587,user_group-1,189.434095,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+201,189.445,1342702587,user_group-4,189.433880,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+202,189.445,1342702587,user_group-4,189.424393,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+203,189.446,1342702587,user_group-4,189.405999,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+204,189.446,1342702587,user_group-4,189.410301,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+205,189.446,1342702587,user_group-4,189.405988,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+206,189.446,1342702587,user_group-4,189.415114,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+207,189.447,1342702587,user_group-4,189.405825,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+208,189.446,1342702587,user_group-4,189.422066,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+209,189.449,1342702587,user_group-4,189.421515,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+210,189.449,1342702587,user_group-4,189.420737,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+211,189.447,1342702587,user_group-3,189.420410,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+212,189.447,1342702587,user_group-3,189.418748,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+213,189.447,1342702587,user_group-3,189.434357,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+214,189.448,1342702587,user_group-3,189.407489,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+215,189.446,1342702587,user_group-2,189.413978,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+216,189.446,1342702587,user_group-2,189.415631,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+217,189.447,1342702587,user_group-2,189.422954,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+218,189.447,1342702587,user_group-2,189.426692,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+219,189.447,1342702587,user_group-2,189.417900,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+220,189.450,1342702587,user_group-2,189.422542,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+221,189.446,1342702587,user_group-2,189.419877,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+222,189.445,1342702587,user_group-5,189.405504,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+223,189.448,1342702587,user_group-3,189.415952,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+224,189.448,1342702587,user_group-3,189.413318,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+225,189.445,1342702587,user_group-5,189.403890,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+226,189.446,1342702587,user_group-5,189.403306,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+227,189.446,1342702587,user_group-5,189.416508,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+228,189.446,1342702587,user_group-5,189.429243,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+229,189.447,1342702587,user_group-5,189.428949,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+230,189.447,1342702587,user_group-5,189.406889,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+231,189.447,1342702587,user_group-5,189.412990,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+232,189.447,1342702587,user_group-5,189.415504,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+233,189.448,1342702587,user_group-5,189.417188,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+234,189.448,1342702587,user_group-3,189.409036,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+235,189.449,1342702587,user_group-3,189.417515,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+236,189.449,1342702587,user_group-3,189.421209,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+237,189.448,1342702587,user_group-3,189.410736,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+238,201.664,1342702599,user_group-4,12.216051,,{}
+239,208.458,1342702606,user_group-1,45.103406,,{}
+240,210.506,1342702608,user_group-4,21.056691,,{}
+241,210.509,1342702608,user_group-4,21.058268,,{}
+242,210.511,1342702608,user_group-4,21.059279,,{}
+243,210.512,1342702608,user_group-4,21.058917,,{}
+244,210.512,1342702608,user_group-5,21.058108,,{}
+245,210.514,1342702608,user_group-2,21.059195,,{}
+246,210.517,1342702608,user_group-5,21.068456,,{}
+247,210.744,1342702608,user_group-4,21.288871,,{}
+248,210.748,1342702608,user_group-4,21.291756,,{}
+249,210.751,1342702608,user_group-4,21.293242,,{}
+250,210.753,1342702608,user_group-3,21.293737,,{}
+251,210.758,1342702608,user_group-1,21.309371,,{}
+252,210.759,1342702608,user_group-3,21.298441,,{}
+253,211.213,1342702609,user_group-3,21.750271,,{}
+254,211.214,1342702609,user_group-5,21.757215,,{}
+255,211.216,1342702609,user_group-4,21.761627,,{}
+256,211.218,1342702609,user_group-3,21.768360,,{}
+257,211.219,1342702609,user_group-1,21.768776,,{}
+258,211.223,1342702609,user_group-1,21.775303,,{}
+259,211.225,1342702609,user_group-3,21.773905,,{}
+260,212.159,1342702609,user_group-1,22.706038,,{}
+261,212.163,1342702609,user_group-1,22.707592,,{}
+262,212.164,1342702609,user_group-2,22.713153,,{}
+263,212.165,1342702610,user_group-1,22.708800,,{}
+264,212.165,1342702610,user_group-2,22.713112,,{}
+265,212.167,1342702610,user_group-1,22.713449,,{}
+266,212.168,1342702610,user_group-5,22.709441,,{}
+267,214.047,1342702611,user_group-3,24.589459,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+268,214.047,1342702611,user_group-3,24.584790,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+269,214.048,1342702611,user_group-3,24.595333,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+270,214.048,1342702611,user_group-3,24.584819,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+271,214.049,1342702611,user_group-3,24.585658,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+272,214.045,1342702611,user_group-5,24.586238,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+273,214.046,1342702611,user_group-5,24.586070,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+274,214.046,1342702611,user_group-5,24.585376,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+275,214.048,1342702611,user_group-5,24.591368,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+276,214.048,1342702611,user_group-5,24.592730,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+277,214.049,1342702611,user_group-5,24.594621,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+278,214.047,1342702611,user_group-4,24.587364,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+279,214.045,1342702611,user_group-2,24.588767,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+280,214.046,1342702611,user_group-2,24.587884,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+281,214.046,1342702611,user_group-2,24.587578,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+282,214.047,1342702611,user_group-2,24.585634,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+283,214.048,1342702611,user_group-2,24.594212,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+284,214.049,1342702611,user_group-2,24.588694,HTTPConnectionPool(host='localhost' port=8000): Max retries exceeded with url: /polls/1/,{}
+285,214.054,1342702611,user_group-2,24.602860,,{}
+286,214.056,1342702611,user_group-1,24.610257,,{}
+287,214.058,1342702611,user_group-1,24.611390,,{}

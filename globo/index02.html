@@ -14,14 +14,12 @@
     </div>
     
     <div class="poll_count">
-		  {% load static %}
-		  
-		  {% for choice in poll.choice_set.all %}
-        <div class="poll_candidate01" style="background: url({{ choice.candidate_photo.url}}) no-repeat;">
-            <div class="poll_number">{{choice.percentual}}<small>%</small></div>
+        <div class="poll_candidate01" style="background: url(css/img/candidate01.jpg) no-repeat;">
+            <div class="poll_number">50<small>%</small></div>
         </div>
-		  {% endfor %}        
-
+        <div class="poll_candidate02" style="background: url(css/img/candidate02.jpg) no-repeat;">
+            <div class="poll_number">50<small>%</small></div>
+        </div>
         <div class="clear"></div>
         
         <div class="big_circle rc50"><!-- sempre colocar aqui o rcN... sendo N o valor do canditato 01. Ou seja, candidato 01 está com 20%, o rcN = rc20 -->
