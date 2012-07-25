@@ -1,5 +1,10 @@
 git clone https://github.com/freddurao/bbb2012.git
 cd bbb2012
 sudo easy_install python-memcached
+
+mysql -u root -p
+CREATE DATABASE bbb2012 CHARACTER SET utf8;
+
+./manage.py syncdb
 python manage.py test
 python manage.py runserver
