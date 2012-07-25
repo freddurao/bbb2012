@@ -1,16 +1,40 @@
 <html>
 <head>
-    <style type="text/css" media="screen">
-        @import url('{{MEDIA_URL}}css/base.css');
-    </style>
+<style type="text/css" media="screen">
+    @import url('{{MEDIA_URL}}css/base.css');
+</style>
+
+<script type="text/javascript">
+function setCheckedValue(radio_obj, new_value) {
+    alert('chegou')
+    if(!radio_obj)
+        return;
+    var radioLength = radio_obj.length;
+    if(radioLength == undefined) {
+        radio_obj.checked = (radio_obj.value == new_value.toString());
+        alert(radio_obj)
+        alert(radio_obj.checked)
+        return;
+    }
+    for(var i = 0; i < radioLength; i++) {
+        radio_obj[i].checked = false;
+        if(radio_obj[i].value == new_value.toString()) {
+            radio_obj[i].checked = true;
+            alert(radio_obj[i])
+            alert(radio_obj[i].checked)
+        }
+    }
+}
+</script>
 </head>
+
 <body>
 
 {% load static %}
 
 <div class="poll_container centered"><!-- div geral que envolve o conteúdo -->
 
-<form action="/polls/{{ poll.id }}/vote/" method="post">
+<form action="/polls/{{ poll.id }}/vote/" method="post" id="radio_bbb">
 
 {% csrf_token %}
 
@@ -31,7 +55,7 @@
             <label for={{ choice.candidate }} ><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
                 <img src={{ choice.candidate_photo.url}} />
                 <!--input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/-->
-                <input type="radio" name="vote_id" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+                <input type="radio" name="vote_id" id="{{ choice.id }}" value="{{ choice.id }}" onclick="setCheckedValue(document.forms['radio_bbb'].elements['vote_id'], {{ choice.id }});" />
             </label>
 
             <p>Para eliminar o <strong>{{ choice.candidate }}</strong> pelo telefone disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8001</strong></p>
@@ -46,7 +70,7 @@
             <label for={{ choice.candidate }}><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
                 <img src={{ choice.candidate_photo.url}} />
                 <!--input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/-->
-                <input type="radio" name="vote_id" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/>
+                <input type="radio" name="vote_id" id="{{ choice.id }}" value="{{ choice.id }}" onclick="setCheckedValue(document.forms['radio_bbb'].elements['vote_id'], {{ choice.id }});" />
             </label>
 
             <p>Para eliminar o <strong>{{ choice.candidate }}</strong> pelo telefone disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8002</strong></p>
