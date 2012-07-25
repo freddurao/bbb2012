@@ -15,8 +15,6 @@
     </div>
     
     <div class="poll_count">
-
-
         {% for choice in poll.choice_set.all %}
         {{ forloop.counter}}
         {% if forloop.counter  == 1 %}        
