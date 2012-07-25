@@ -13,8 +13,8 @@
 .poll_content label:hover img, .poll_content label.selected_candidate img {margin: -5px;}
 .poll_content label:hover, .poll_content label.selected_candidate {border: 5px solid #ff9a00;}
 .poll_content label input {display: none;}
-.poll_content h2 i {display: inline-block; width: 36px; height: 36px; background: url(static/img//sprites.png) no-repeat 0 0; vertical-align: middle;}
-.poll_content h2 {display: block; text-align: center; font-weight: normal; text-transform: uppercase; font-size: 22px; color: #545454; line-height: 1; margin: 0 0 20px; padding: 0 0 20px; background: url(static/img/sprites.png) no-repeat 0 -123px;}
+.poll_content h2 i {display: inline-block; width: 36px; height: 36px; background: url(../img/sprites.png) no-repeat 0 0; vertical-align: middle;}
+.poll_content h2 {display: block; text-align: center; font-weight: normal; text-transform: uppercase; font-size: 22px; color: #545454; line-height: 1; margin: 0 0 20px; padding: 0 0 20px; background: url(../img/sprites.png) no-repeat 0 -123px;}
 .poll_content h3 {font-weight: bold; font-size: 20px; color: #545454; line-height: 1.2; margin: 0; padding: 0 0 12px;}
 .poll_content p {font-size: 12px; line-height: 1.4; color: #555; margin: 0;}
 .poll_content p.poll_alert {text-align: center; font-size: 18px;}
@@ -171,4 +171,4 @@ width: 0; height: 0; border-right: 130px solid transparent; border-top: 130px so
 .poll_candidate01 .poll_number {right: 34px; padding-right: 26px;}
 .poll_candidate02 .poll_number {left: 34px; padding-left: 26px;}
 
-.close_poll a {display: inline-block; width: 40px; height: 39px; background: url(static/img/sprites.png) no-repeat right top; position: absolute; top: -20px; right: -20px; text-indent: -999em; overflow: hidden;}
+.close_poll a {display: inline-block; width: 40px; height: 39px; background: url(../img/sprites.png) no-repeat right top; position: absolute; top: -20px; right: -20px; text-indent: -999em; overflow: hidden;}

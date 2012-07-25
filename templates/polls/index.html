@@ -1,29 +1,32 @@
-<html lang="pt-BR">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=8" />
-<meta content="pt-BR" http-equiv="Content-Language" />
-<meta name="language" content="pt-BR" />
-<meta name="distribution" content="global"/>
-
-<link rel="stylesheet" href="{{MEDIA_URL}}css/screen.css" type="text/css"/>
-
-<script type="text/javascript"></script>
+    <style type="text/css" media="screen">
+        @import url('{{MEDIA_URL}}css/base.css');
+    </style>
 </head>
 <body>
-  <section>
-    <div>
-		<h1>Paredões em Andamento</h1>
-		{% if latest_poll_list %}
-		    <ul>
-		    {% for poll in latest_poll_list %}
-		    <li><a href="{% url polls.views.detail poll_id=poll.id %}">{{ poll.question }}</a></li>
-		    {% endfor %}
-		    </ul>
-		{% else %}
-		    <p>No polls are available.</p>
-		{% endif %}
+
+
+<div class="poll_container centered"><!-- div geral que envolve o conteúdo -->
+
+    <div class="poll_content">
+        
+        <div class="poll_submit">
+        <h2>Paredões em Andamento</h2>
+        {% if latest_poll_list %}
+                <ul>
+                {% for poll in latest_poll_list %}
+                <a href="{% url polls.views.detail poll_id=poll.id %}">{{ poll.question }}</a>
+                {% endfor %}
+                </ul>
+        {% else %}
+                <p>Não há paredões em andamento.</p>
+        {% endif %}
+        </div>
+
+        <div class="clear">
     </div>
-  </section>
-  </body>
+
+</div><!-- poll_container -->
+</body>
 </html>

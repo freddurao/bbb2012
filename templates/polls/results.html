@@ -1,26 +1,37 @@
 <html>
 <head>
     <style type="text/css" media="screen">
-        @import url('css/base.css');
+        @import url('{{MEDIA_URL}}css/base.css');        
     </style>
 </head>
 <body>
 <div class="poll_container centered"><!-- div geral que envolve o conteúdo -->
 <form>
+    {% load static %}
     <div class="poll_content">
         
         <h2><i></i> Quem deve ser <strong>eliminado</strong>?</h2><!-- título geral. o <i></i> vazio faz carregar o ícone antes do texto-->
-        <p class="poll_alert"><strong>Parab&eacute;ns!</strong> Seu voto para <strong>Participante 1</strong> foi enviado com sucesso.</p>
+        <p class="poll_alert"><strong>Parab&eacute;ns!</strong> Seu voto foi enviado com sucesso.</p>
     </div>
     
     <div class="poll_count">
-		  {% load static %}
-		  
-		  {% for choice in poll.choice_set.all %}
+
+
+        {% for choice in poll.choice_set.all %}
+        {{ forloop.counter}}
+        {% if forloop.counter  == 1 %}        
         <div class="poll_candidate01" style="background: url({{ choice.candidate_photo.url}}) no-repeat;">
             <div class="poll_number">{{choice.percentual}}<small>%</small></div>
         </div>
-		  {% endfor %}        
+
+        {% else %}
+
+        <div class="poll_candidate02" style="background: url({{ choice.candidate_photo.url}}) no-repeat;">
+            <div class="poll_number">{{choice.percentual}}<small>%</small></div>
+        </div>     
+        {% endif %}        
+		        
+         {% endfor %}
 
         <div class="clear"></div>
         
@@ -34,6 +45,8 @@
                 </span>
             </div>
         </div><!-- big_circle -->
+
+
         
     </div>
 

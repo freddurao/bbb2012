@@ -1,0 +1,41 @@
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta content="pt-BR" http-equiv="Content-Language" />
+<meta name="language" content="pt-BR" />
+<meta name="distribution" content="global"/>
+
+<link rel="stylesheet" href="{{MEDIA_URL}}css/style.css" type="text/css"/>
+
+<script type="text/javascript"></script>
+</head>
+
+<body>
+	<div>
+
+		<div>
+		<h2>Paredões em Andamento</h2>
+		{% if latest_poll_list %}
+				<ul>
+				{% for poll in latest_poll_list %}
+				<a href="{% url polls.views.detail poll_id=poll.id %}">{{ poll.question }}</a>
+				{% endfor %}
+				</ul>
+		{% else %}
+				<p>No polls are available.</p>
+		{% endif %}
+		</div>
+
+
+		<div class="poll_count">
+		<h2>Cadastre um novo paredão</h2>
+				<a href="/admin">Crie um novo paredão (admin role)</a>
+		</div>
+
+	</div>
+		
+		<br><img src="{{MEDIA_URL}}img/bbb.jpg"/>
+
+</body>
+</html>

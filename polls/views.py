@@ -34,7 +34,9 @@ def vote(request, poll_id):
         param.update(dist_captcha)        
         return render_to_response('polls/detail.html',param,RequestContext(request))
     try:
-        selected_choice = p.choice_set.get(pk=request.POST['choice'])
+        #selected_choice = p.choice_set.get(pk=request.POST['choice'])
+        selected_choice = p.choice_set.get(pk=1)
+        print 'selected_choice',selected_choice
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the poll voting form.
         param  =  {'poll': p,'error_message': "Voce precisa votar!.",}
@@ -58,6 +60,7 @@ def update_choice_percentual(p):
         choice.percentual = round(choice.votes / total_votes,2) * 100
         choice.save()
 
+
 def results(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
     return render_to_response('polls/results.html', {'poll': p},RequestContext(request))
@@ -67,7 +70,7 @@ def results_same_screen(request, poll_id):
     p = get_object_or_404(Poll, pk=poll_id)
     param  = {'poll': p}
     param.update(captcha(request))
-    return render_to_response('polls/detail.html',param,RequestContext(request))
+    return render_to_response('polls/results.html',param,RequestContext(request))
 
 def captcha(request):
         # random generator

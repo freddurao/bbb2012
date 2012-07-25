@@ -6,12 +6,13 @@
 </head>
 <body>
 {% load static %}
-{{ poll.question }}
+
 <div class="poll_container centered"><!-- div geral que envolve o conteúdo -->
 
 <form action="/polls/{{ poll.id }}/vote/" method="post">
 
 {% csrf_token %}
+
     <div class="poll_content">
 
         <h2><i></i> Quem deve ser <strong>eliminado</strong>?</h2>
@@ -19,17 +20,43 @@
         <!-- título geral. o <i></i> vazio faz carregar o ícone antes do texto-->
         
 		  <h3><i></i>{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}</h3>
+            
 
 			{% for choice in poll.choice_set.all %}
-        	<div class="one2">
+
+            {% if forloop.counter  == 1 %}
+        	<div class="one2 first">
             <h3>{{choice.candidate}}</h3>
-            <label for={{ choice.candidate }} class="selected_candidate"><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
+            <label for={{ choice.candidate }} ><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
                 <img src={{ choice.candidate_photo.url}} />
-                <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/>
+                <!--input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/-->
+                <input type="radio" name="vote_id" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
             </label>
+
             <p>Para eliminar o <strong>{{ choice.candidate }}</strong> pelo telefone disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8001</strong></p>
-        	</div>
-		  {% endfor %}
+
+            </div> 
+
+            {% else %}
+
+            <div>
+                   
+            <h3>{{choice.candidate}}</h3>
+            <label for={{ choice.candidate }}><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
+                <img src={{ choice.candidate_photo.url}} />
+                <!--input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/-->
+                <input type="radio" name="vote_id" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/>
+            </label>
+
+            <p>Para eliminar o <strong>{{ choice.candidate }}</strong> pelo telefone disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8002</strong></p>
+            </div>   
+
+
+            {% endif %}          
+          
+
+		    {% endfor %}
+       
 
         <div class="clear">
 
