@@ -55,7 +55,7 @@ function setCheckedValue(radio_obj, new_value) {
             <label for={{ choice.candidate }} ><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
                 <img src={{ choice.candidate_photo.url}} />
                 <!--input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/-->
-                <input type="radio" name="vote_id" id="{{ choice.id }}" value="{{ choice.id }}" onclick="setCheckedValue(document.forms['radio_bbb'].elements['vote_id'], {{ choice.id }});" />
+                <input type="radio" name="vote_id" id="{{ choice.id }}" value="{{ choice.id }}" onClick="setCheckedValue(document.forms['radio_bbb'].elements['vote_id'], {{ choice.id }});" />
             </label>
 
             <p>Para eliminar o <strong>{{ choice.candidate }}</strong> pelo telefone disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8001</strong></p>
@@ -70,7 +70,7 @@ function setCheckedValue(radio_obj, new_value) {
             <label for={{ choice.candidate }}><!-- com jquery, adicionar class="selected_candidate" ao clicar no label -->
                 <img src={{ choice.candidate_photo.url}} />
                 <!--input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}"/-->
-                <input type="radio" name="vote_id" id="{{ choice.id }}" value="{{ choice.id }}" onclick="setCheckedValue(document.forms['radio_bbb'].elements['vote_id'], {{ choice.id }});" />
+                <input type="radio" name="vote_id" id="{{ choice.id }}" value="{{ choice.id }}" onClick="setCheckedValue(document.forms['radio_bbb'].elements['vote_id'], {{ choice.id }});" />
             </label>
 
             <p>Para eliminar o <strong>{{ choice.candidate }}</strong> pelo telefone disque <strong>0800-123-001</strong> ou mande um SMS para <strong>8002</strong></p>
