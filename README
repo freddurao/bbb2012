@@ -1,25 +1,37 @@
+CRIANDO O BANCO DE DADOS
+
+Antes de executar o sh make.sh é necessário a criação do database. Segue o script abaixo:
+
+mysql -u root -p
+CREATE DATABASE bbb2012 CHARACTER SET utf8;
+exit;
+
+Execute sh make.sh
+
+As tabelas serão geradas automaticamente, e quando houver a pergunta para criar um superuser escolha a opcao 'YES' e defina sua propria senha para a tela de administracao.
+
+Em seguida os testes serao realizados (OS TESTES VAO DEMORAR UM POUCO) e o sistema está pronto para ser utilizado.
+
+
 MAIN SCREEN
 
 Main URL: http://localhost:8000/  -- Tela de administracao. Aqui vc poderá criar uma votacao nova ou visualizar paredões que estao ocorrendo.
 
-
-
-
+Como não há paredoes acontecendo, crie uma nova votação:
 
 CRIAR NOVA VOTACAO
 
 Senha para o superusuario username admin, password admin.
 
 Em http://localhost:8000/admin/ no menu Polls ou diretamente http://localhost:8000/admin/polls/poll/ o admin poderá criar quantos paredoes ele quiser.
-Apenas clique na opcao 'Add poll' no canto direito superior da tela e entre com as informações dos candidatos ao paredão.
 
+Apenas clique na opcao 'Add poll' no canto direito superior da tela e entre com as informações dos candidatos ao paredão.
 
 
 
 VISUALIZAR PAREDOES EXISTENTES
 
 Em http://localhost:8000/polls/ haverá a listagem de paredões cadastrados.
-
 
 
 TELA DE VOTACAO
